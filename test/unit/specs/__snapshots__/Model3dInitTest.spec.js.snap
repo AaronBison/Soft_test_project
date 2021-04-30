@@ -1,0 +1,35 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Initialization should match snapshot 1`] = `
+<div class="container justify-center grid-list-md">
+    <div class="layout row wrap">
+        <div class="flex">
+            <div class="v-input my-2 v-input--dense theme--light v-text-field v-text-field--single-line v-text-field--solo v-text-field--enclosed v-select">
+                <div class="v-input__control">
+                    <div role="button" aria-haspopup="listbox" aria-expanded="false" aria-owns="list-2" class="v-input__slot" style="background-color: rgb(225, 225, 222); border-color: #e1e1de;">
+                        <div class="v-select__slot"><label for="input-2" class="v-label theme--light" style="left: 0px; position: absolute;">Válaszd ki hová szeretnél menni!</label>
+                            <div class="v-select__selections"><input id="input-2" readonly="readonly" type="text" aria-readonly="false" autocomplete="off"></div>
+                            <div class="v-input__append-inner">
+                                <div class="v-input__icon v-input__icon--append"><i aria-hidden="true" class="v-icon notranslate mdi mdi-menu-down theme--light"></i></div>
+                            </div><input type="hidden" value="[object Object]">
+                        </div>
+                        <div class="v-menu">
+                            <!---->
+                        </div>
+                    </div>
+                    <div class="v-text-field__details">
+                        <div class="v-messages theme--light">
+                            <transition-group-stub tag="div" name="message-transition" class="v-messages__wrapper"></transition-group-stub>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="flex">
+            <div class="my-2"><button type="button" class="mx-2 v-btn v-btn--is-elevated v-btn--fab v-btn--has-bg v-btn--round theme--dark v-size--small grey"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate far fa-arrow-alt-circle-left theme--dark"></i></span></button> <button type="button" class="mx-2 v-btn v-btn--is-elevated v-btn--fab v-btn--has-bg v-btn--round theme--dark v-size--small grey"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate far fa-arrow-alt-circle-up theme--dark"></i></span></button> <button type="button" class="mx-2 v-btn v-btn--is-elevated v-btn--fab v-btn--has-bg v-btn--round theme--dark v-size--small grey"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate far fa-arrow-alt-circle-right theme--dark"></i></span></button> <button type="button" class="mx-2 v-btn v-btn--is-elevated v-btn--fab v-btn--has-bg v-btn--round theme--dark v-size--small grey"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate far fa-arrow-alt-circle-down theme--dark"></i></span></button>
+                <!----> <button type="button" disabled="disabled" class="mx-2 v-btn v-btn--disabled v-btn--fab v-btn--has-bg v-btn--round theme--dark v-size--small"><span class="v-btn__content"><i aria-hidden="true" class="v-icon notranslate fas fa-walking theme--dark"></i></span></button></div>
+        </div>
+        <div class="flex xs18 sm16 md14 lg12 xl12"></div>
+    </div>
+</div>
+`;

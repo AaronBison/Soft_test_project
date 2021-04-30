@@ -1,0 +1,603 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for sapi3dtour/src/components/userTasks/infOthersAdd.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\..\index.html">All files</a> / <a href="index.html">sapi3dtour/src/components/userTasks</a> infOthersAdd.vue
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165
+166
+167
+168
+169
+170
+171
+172
+173
+174
+175
+176
+177
+178
+179
+180
+181
+182
+183
+184
+185
+186
+187</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+    &lt;v-container class="justify-center"&gt;
+        &lt;v-form ref="form" class="mx-5 " lazy-validation&gt;
+            &lt;v-flex&gt;
+            &lt;v-combobox v-model="selectedItem" class="ml-5" dense :items="departments" 
+                            label="Válaszd ki a tanszéket!" hide-selected persistent-hint small-chips
+                            :rules="[ value =&gt;!! value || 'Nincs kiválasztva elem!']"/&gt;
+            &lt;/v-flex&gt;
+            &lt;div v-for="(textField, i) in textFields" :key="i" class="text-fields-row"&gt;
+                &lt;v-text-field class="mx-2" v-model="textField.value1" :label="textField.label1" 
+                    :rules="[ value =&gt;!! value || 'A mezőt kötelező kitölteni!']" outlined clearable&gt;&lt;/v-text-field&gt;
+                &lt;v-btn icon @click="removeTextField(i)"&gt;
+                    &lt;v-icon&gt; far fa-trash-alt &lt;/v-icon&gt;
+                &lt;/v-btn&gt;
+            &lt;/div&gt;
+            &lt;div v-for="(textLink, j) in textLinks" :key="j+5" class="text-fields-row"&gt;
+                &lt;v-text-field class="mx-2" v-model="textLink.link1" :label="textLink.label1" 
+                    :rules="[ value =&gt;!! value || 'A mezőt kötelező kitölteni!']" outlined clearable&gt;&lt;/v-text-field&gt;
+                &lt;v-btn icon @click="removeLinkField(j)"&gt;
+                    &lt;v-icon&gt; far fa-trash-alt &lt;/v-icon&gt;
+                &lt;/v-btn&gt;
+            &lt;/div&gt;
+            &lt;v-tooltip bottom&gt;
+                &lt;template v-slot:activator="{ on, attrs }"&gt;
+                    &lt;v-btn icon @click="addTextField" :disabled="showPlusBottum" v-bind="attrs" v-on="on"&gt;
+                        &lt;v-icon&gt; far fa-keyboard &lt;/v-icon&gt;
+                    &lt;/v-btn&gt;
+                &lt;/template&gt;
+                &lt;span&gt;Szöveg doboz hozzáadás!&lt;/span&gt;
+            &lt;/v-tooltip&gt;
+            &lt;v-tooltip bottom&gt;
+                &lt;template v-slot:activator="{ on, attrs }"&gt;
+                    &lt;v-btn icon @click="addLinkField" :disabled="showPlusBottum" v-bind="attrs" v-on="on"&gt;
+                        &lt;v-icon&gt; fas fa-link &lt;/v-icon&gt;
+                    &lt;/v-btn&gt;
+                &lt;/template&gt;
+                &lt;span&gt;Esemény link hozzáadás!&lt;/span&gt;
+            &lt;/v-tooltip&gt;
+            &lt;v-spacer&gt;&lt;/v-spacer&gt;
+            &lt;v-card-actions class="justify-center"&gt; 
+                &lt;v-btn color="#2B405D" outlined text class="mr-4" @click="validateData" &gt;Hozzáadás&lt;/v-btn&gt; 
+            &lt;/v-card-actions&gt;
+            &lt;transition &gt;
+                &lt;v-list-item v-if="loadingButtonX" &gt;
+                    &lt;v-list-item-icon&gt;
+                        &lt;v-icon color="red" &gt;{{ icon }}&lt;/v-icon&gt;
+                    &lt;/v-list-item-icon&gt;
+                    &lt;v-list-item-content &gt;
+                        &lt;v-list-item-title class="red--text" &gt;{{ othersBranchAddMsg }}&lt;/v-list-item-title&gt;
+                    &lt;/v-list-item-content&gt;
+                &lt;/v-list-item&gt;
+                &lt;/transition&gt;
+                &lt;transition &gt;
+                    &lt;v-list-item v-if="loadingButtonTick" &gt;
+                    &lt;v-list-item-icon&gt;
+                        &lt;v-icon color="green" &gt;{{ icon }}&lt;/v-icon&gt;
+                    &lt;/v-list-item-icon&gt;
+                    &lt;v-list-item-content &gt;
+                        &lt;v-list-item-title class="green--text" &gt;{{ othersBranchAddMsg }}&lt;/v-list-item-title&gt;
+                    &lt;/v-list-item-content&gt;
+                &lt;/v-list-item&gt;
+            &lt;/transition&gt;
+        &lt;/v-form&gt;
+    &lt;/v-container&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+<span class="cstat-no" title="statement not covered" >import UserTasks from "@/services/userTasks";</span>
+&nbsp;
+export default {
+    name: 'InformationOthersAdd',
+<span class="fstat-no" title="function not covered" >    data () {</span>
+<span class="cstat-no" title="statement not covered" >        return {</span>
+            textFields: [],
+            textLinks: [],
+            showPlusBottum: false,
+            departments:[],
+            selectedItem:null,
+            loadingButtonX: false,
+            loadingButtonTick:false,
+            icon: "",
+            othersBranchAddMsg: ""
+        };
+    },
+    methods:{
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >        getDepartments(){</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >            UserTasks.getDepartmentsDepartmentName().then((res) =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >                this.departments = res.data;</span>
+<span class="fstat-no" title="function not covered" >            }).catch((err) =&gt; {</span>
+<span class="cstat-no" title="statement not covered" >                console.log(err)</span>
+            });
+        },
+<span class="fstat-no" title="function not covered" >        addTextField () {</span>
+<span class="cstat-no" title="statement not covered" >            this.textFields.push({ </span>
+                label1: "Elem elnevezése (pl. név, email stb.)", 
+                value1: ""
+            });
+<span class="cstat-no" title="statement not covered" >            if (this.textFields.length + this.textLinks.length == 5)</span>
+            {
+<span class="cstat-no" title="statement not covered" >                this.showPlusBottum = true;</span>
+            }
+        },
+<span class="fstat-no" title="function not covered" >        addLinkField () {</span>
+<span class="cstat-no" title="statement not covered" >            this.textLinks.push({ </span>
+                label1: "Elem elnevezése (pl. link, facebook, instagram stb.)", 
+                link1: "",
+            });
+<span class="cstat-no" title="statement not covered" >            if (this.textFields.length + this.textLinks.length == 5)</span>
+            {
+<span class="cstat-no" title="statement not covered" >                this.showPlusBottum = true;</span>
+            }
+        },
+<span class="fstat-no" title="function not covered" >        removeTextField (index) {</span>
+<span class="cstat-no" title="statement not covered" >            this.textFields.splice(index, 1)</span>
+<span class="cstat-no" title="statement not covered" >            this.showPlusBottum = false;</span>
+        },
+<span class="fstat-no" title="function not covered" >        removeLinkField (index) {</span>
+<span class="cstat-no" title="statement not covered" >            this.textLinks.splice(index, 1)</span>
+<span class="cstat-no" title="statement not covered" >            this.showPlusBottum = false;</span>
+        },
+<span class="fstat-no" title="function not covered" >        validateData(){</span>
+<span class="cstat-no" title="statement not covered" >            if (this.$refs.form.validate()) {</span>
+<span class="cstat-no" title="statement not covered" >                this.newOthers();</span>
+            }
+        },
+<span class="fstat-no" title="function not covered" >        newOthers()</span>
+<span class="cstat-no" title="statement not covered" >        {</span>
+<span class="cstat-no" title="statement not covered" >            var value = [];</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >            this.textFields.forEach(element =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >                value.push("t:" + element.value1)</span>
+            });
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >            this.textLinks.forEach(element =&gt; {</span></span>
+<span class="cstat-no" title="statement not covered" >                value.push("l:" + element.link1)</span>
+            });
+<span class="cstat-no" title="statement not covered" >            if(value.length &lt; 2)</span>
+            {
+<span class="cstat-no" title="statement not covered" >                this.othersBranchAddMsg = "Legalább két mezőt ki kell tölteni!";</span>
+<span class="cstat-no" title="statement not covered" >                this.icon = "fas fa-times";</span>
+<span class="cstat-no" title="statement not covered" >                this.loadingButtonX = true;</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >                setTimeout(() =&gt; (this.loadingButtonX = false), 3000);</span></span>
+            }
+            else
+            {
+<span class="cstat-no" title="statement not covered" >                if(value.length != 5)</span>
+                {
+<span class="cstat-no" title="statement not covered" >                    for (var i = value.length; i &lt; 5 ; ++i)</span>
+                    {
+<span class="cstat-no" title="statement not covered" >                        value.push(null);</span>
+                    }
+                }
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >                UserTasks.addOtherBranch({</span></span>
+                    value1:value[0],
+                    value2:value[1],
+                    value3:value[2],
+                    value4:value[3],
+                    value5:value[4],
+                    departmentName: this.selectedItem
+                    }).then((res) =&gt;{
+<span class="cstat-no" title="statement not covered" >                        this.othersBranchAddMsg = "Hozzáadás sikeres volt!";</span>
+<span class="cstat-no" title="statement not covered" >                        this.loadingButtonTick = true;</span>
+<span class="cstat-no" title="statement not covered" >                        this.icon = "fas fa-check";</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >                        setTimeout(() =&gt; (this.loadingButtonTick = false),3000);</span></span>
+<span class="fstat-no" title="function not covered" >                    }).catch((err)=&gt;{</span>
+<span class="cstat-no" title="statement not covered" >                        this.othersBranchAddMsg = "Hozzáadás sikertelen volt!";</span>
+<span class="cstat-no" title="statement not covered" >                        this.icon = "fas fa-times";</span>
+<span class="cstat-no" title="statement not covered" >                        this.loadingButtonX = true;</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >                        setTimeout(() =&gt; (this.loadingButtonX = false), 3000);</span></span>
+                });
+            }
+        }
+    },
+<span class="fstat-no" title="function not covered" >    mounted() {</span>
+<span class="cstat-no" title="statement not covered" >        this.getDepartments();</span>
+<span class="cstat-no" title="statement not covered" >        this.addTextField();</span>
+    },
+}
+&lt;/script&gt;
+&nbsp;
+&lt;style&gt;
+    #card {
+        background-color: #E1E1DE;
+        color: #2B405D;
+    }
+    .text-fields-row {
+        display: flex;
+    }
+&lt;/style&gt;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Mar 19 2021 11:16:01 GMT+0200 (GMT+02:00)
+</div>
+</div>
+<script src="..\..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\..\sorter.js"></script>
+</body>
+</html>

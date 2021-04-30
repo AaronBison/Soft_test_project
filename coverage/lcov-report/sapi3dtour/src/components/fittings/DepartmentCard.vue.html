@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for sapi3dtour/src/components/fittings/DepartmentCard.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\..\index.html">All files</a> / <a href="index.html">sapi3dtour/src/components/fittings</a> DepartmentCard.vue
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+    &lt;v-container grid-list-md&gt;
+        &lt;v-layout row wrap &gt;
+            &lt;v-flex xs15 sm14 md13 lg12 xl11&gt;
+                &lt;v-card id="card" elevation="10" &gt;
+                    &lt;v-flex&gt;
+                        &lt;v-card-title class="justify-center"&gt;
+                            &lt;a v-bind:href="card.link" target="_blank"&gt;{{ card.departmentName }}&lt;/a&gt;
+                            &amp;nbsp;&amp;nbsp;&amp;nbsp;
+                            &lt;v-tooltip bottom&gt;
+                                &lt;template v-slot:activator="{ on, attrs }"&gt;
+                                    &lt;v-btn v-bind="attrs" v-on="on" icon @click="takeToThere"&gt;
+                                        &lt;v-icon&gt;fas fa-map-marked-alt&lt;/v-icon&gt;
+                                    &lt;/v-btn&gt;     
+                                &lt;/template&gt;
+                                &lt;span&gt;Vigyél el!&lt;/span&gt;
+                            &lt;/v-tooltip&gt;
+                        &lt;/v-card-title&gt;
+                    &lt;/v-flex&gt;
+                    &lt;v-divider class="mx-12"&gt;&lt;/v-divider&gt;
+                    &lt;v-flex&gt;
+                        &lt;v-card-subtitle v-if="branches != null"&gt; Alrészlegek &lt;/v-card-subtitle&gt;
+                    &lt;/v-flex&gt;
+                    &lt;v-flex&gt;
+                        &lt;BranchList v-for=" (branch, i) in branches" :key="i" :branch="branch"/&gt;
+                    &lt;/v-flex&gt;
+                    &lt;v-divider v-if="branches != null" class="mx-12"&gt;&lt;/v-divider&gt;
+                    &lt;v-flex&gt;
+                        &lt;v-card-subtitle v-if="branches != null" &gt; Egyebek &lt;/v-card-subtitle&gt;
+                    &lt;/v-flex&gt;
+                    &lt;v-flex&gt; 
+                        &lt;OtherBranchList v-for="(otherBranch, i) in othersBranch" :key="i" :otherBranch="otherBranch"/&gt;
+                    &lt;/v-flex&gt;
+                &lt;/v-card&gt;
+            &lt;/v-flex&gt;
+        &lt;/v-layout&gt;
+    &lt;/v-container&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+<span class="cstat-no" title="statement not covered" >import BranchList from "./BranchesList"</span>
+<span class="cstat-no" title="statement not covered" >import OtherBranchList from "./OthersBranchList"</span>
+<span class="cstat-no" title="statement not covered" >import GeneralTasks from "@/services/generalTasks"</span>
+&nbsp;
+export default {
+    name: 'DepartmentCard',
+    components: {BranchList, OtherBranchList},
+    props: ["card"],
+<span class="fstat-no" title="function not covered" >    data () {</span>
+<span class="cstat-no" title="statement not covered" >        return {</span>
+            branches:null,
+            othersBranch:null
+        };
+    },
+    methods: {
+<span class="fstat-no" title="function not covered" >        getBranches()</span>
+<span class="cstat-no" title="statement not covered" >        {</span>
+<span class="cstat-no" title="statement not covered" >            GeneralTasks.getBranches(</span>
+<span class="fstat-no" title="function not covered" >                {</span>
+                    departmentName : this.card.departmentName
+                }
+            ).then((res)=&gt;{
+<span class="cstat-no" title="statement not covered" >                if(res.data.length != 0)</span>
+                {
+<span class="cstat-no" title="statement not covered" >                    this.branches = res.data;</span>
+                }
+                else
+                {
+<span class="cstat-no" title="statement not covered" >                    this.othersBranch = [];</span>
+                }
+<span class="fstat-no" title="function not covered" >            }).catch((err)=&gt;{</span>
+<span class="cstat-no" title="statement not covered" >                this.branches = null;</span>
+            });
+        },
+<span class="fstat-no" title="function not covered" >        getOtherBranches()</span>
+<span class="cstat-no" title="statement not covered" >        {</span>
+<span class="cstat-no" title="statement not covered" >            GeneralTasks.getOtherBranches(</span>
+<span class="fstat-no" title="function not covered" >                {</span>
+                    departmentName : this.card.departmentName
+                }
+            ).then((res)=&gt;{
+<span class="cstat-no" title="statement not covered" >                if(res.data.length != 0)</span>
+                {
+<span class="cstat-no" title="statement not covered" >                    this.othersBranch = res.data;</span>
+                }
+                else{
+<span class="cstat-no" title="statement not covered" >                    this.othersBranch = null;</span>
+                }
+<span class="fstat-no" title="function not covered" >            }).catch((err)=&gt;{</span>
+<span class="cstat-no" title="statement not covered" >                this.othersBranch = null;</span>
+            });
+        },
+<span class="fstat-no" title="function not covered" >        takeToThere()</span>
+        {
+<span class="cstat-no" title="statement not covered" >            switch (this.card.departmentName){</span>
+				case "Matematika-Informatika Tanszék":
+<span class="cstat-no" title="statement not covered" >                    this.$router.push({ path: '/model3d', query: { road: 'mt' } })</span>
+<span class="cstat-no" title="statement not covered" >                    break;</span>
+                case "Dékáni hivatal":
+<span class="cstat-no" title="statement not covered" >                    this.$router.push({ path: '/model3d', query: { road: 'dh' } })</span>
+<span class="cstat-no" title="statement not covered" >                    break;</span>
+                case "Gazdasági Hivatal":
+<span class="cstat-no" title="statement not covered" >                    this.$router.push({ path: '/model3d', query: { road: 'dh' } })</span>
+<span class="cstat-no" title="statement not covered" >                    break;</span>
+                case "Villamosmérnöki Tanszék":
+<span class="cstat-no" title="statement not covered" >                    this.$router.push({ path: '/model3d', query: { road: 'vt' } })</span>
+<span class="cstat-no" title="statement not covered" >                    break;</span>
+                default:
+<span class="cstat-no" title="statement not covered" >					break;</span>
+            }
+        }
+    },
+<span class="fstat-no" title="function not covered" >    mounted()</span>
+    {
+<span class="cstat-no" title="statement not covered" >        this.getBranches();</span>
+<span class="cstat-no" title="statement not covered" >        this.getOtherBranches();</span>
+    }
+}
+&lt;/script&gt;
+&nbsp;
+&lt;style&gt;
+    #card {
+        background-color: #E1E1DE;
+        color: #2B405D;
+    }
+&lt;/style&gt;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Mar 19 2021 11:16:01 GMT+0200 (GMT+02:00)
+</div>
+</div>
+<script src="..\..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\..\sorter.js"></script>
+</body>
+</html>

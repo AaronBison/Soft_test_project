@@ -1,0 +1,280 @@
+{
+    "markers": [
+        {
+            "name": "startDoor",
+            "coordinates": {
+                "x": 0,
+                "y": 15,
+                "z": -15
+            },
+            "isCheckpoint": true
+        },
+        {
+            "name": "aula",
+            "coordinates": {
+                "x": 0,
+                "y": 15,
+                "z": 8
+            },
+            "isCheckpoint": true
+        },
+        {
+            "name": "aula-geptan-1",
+            "coordinates": {
+                "x": 0,
+                "y": 15,
+                "z": 13
+            },
+            "isCheckpoint": false
+        },
+        {
+            "name": "geptan",
+            "coordinates": {
+                "x": 9,
+                "y": 15,
+                "z": 22
+            },
+            "isCheckpoint": true
+        },
+        {
+            "name": "aula-geplab-1",
+            "coordinates": {
+                "x": 9,
+                "y": 15,
+                "z": 4
+            },
+            "isCheckpoint": false
+        },
+        {
+            "name": "geplab",
+            "coordinates": {
+                "x": 9,
+                "y": 15,
+                "z": -26
+            },
+            "isCheckpoint": true
+        },
+        {
+            "name": "geptan-dekhiv-1",
+            "coordinates": {
+                "x": 6,
+                "y": 15,
+                "z": 22
+            },
+            "isCheckpoint": false
+        },
+        {
+            "name": "geptan-dekhiv-2",
+            "coordinates": {
+                "x": 0,
+                "y": 13,
+                "z": 22
+            },
+            "isCheckpoint": false
+        },
+        {
+            "name": "dekhiv",
+            "coordinates": {
+                "x": -8,
+                "y": 11,
+                "z": 22
+            },
+            "isCheckpoint": true
+        },
+        {
+            "name": "dekhiv-viltan-1",
+            "coordinates": {
+                "x": 7,
+                "y": 11,
+                "z": 19
+            },
+            "isCheckpoint": false
+        },
+        {
+            "name": "viltan",
+            "coordinates": {
+                "x": 9,
+                "y": 11,
+                "z": 22
+            },
+            "isCheckpoint": true
+        },
+        {
+            "name": "viltan-mattan-1",
+            "coordinates": {
+                "x": 6,
+                "y": 11,
+                "z": 22
+            },
+            "isCheckpoint": false
+        },
+        {
+            "name": "viltan-mattan-2",
+            "coordinates": {
+                "x": 0,
+                "y": 9,
+                "z": 22
+            },
+            "isCheckpoint": false
+        },
+        {
+            "name": "viltan-mattan-3",
+            "coordinates": {
+                "x": -8,
+                "y": 7.5,
+                "z": 22
+            },
+            "isCheckpoint": false
+        },
+        {
+            "name": "viltan-mattan-4",
+            "coordinates": {
+                "x": 7,
+                "y": 7.5,
+                "z": 19
+            },
+            "isCheckpoint": false
+        },
+        {
+            "name": "mattan",
+            "coordinates": {
+                "x": 9,
+                "y": 7.5,
+                "z": 22
+            },
+            "isCheckpoint": true
+        }
+    ],
+    "aula": [
+        {
+            "el": "startDoor"
+        },
+        {
+            "el": "aula"
+        }
+    ],
+    "geptan": [
+        {
+            "el": "startDoor"
+        },
+        {
+            "el": "aula"
+        },
+        {
+            "el": "aula-geptan-1"
+        },
+        {
+            "el": "geptan"
+        }
+    ],
+    "geplab": [
+        {
+            "el": "startDoor"
+        },
+        {
+            "el": "aula"
+        },
+        {
+            "el": "aula-geplab-1"
+        },
+        {
+            "el": "geplab"
+        }
+    ],
+    "dekhiv": [
+        {
+            "el": "startDoor"
+        },
+        {
+            "el": "aula"
+        },
+        {
+            "el": "aula-geptan-1"
+        },
+        {
+            "el": "geptan"
+        },
+        {
+            "el": "geptan-dekhiv-1"
+        },
+        {
+            "el": "geptan-dekhiv-2"
+        },
+        {
+            "el": "dekhiv"
+        }
+    ],
+    "viltan": [
+        {
+            "el": "startDoor"
+        },
+        {
+            "el": "aula"
+        },
+        {
+            "el": "aula-geptan-1"
+        },
+        {
+            "el": "geptan"
+        },
+        {
+            "el": "geptan-dekhiv-1"
+        },
+        {
+            "el": "geptan-dekhiv-2"
+        },
+        {
+            "el": "dekhiv"
+        },
+        {
+            "el": "dekhiv-viltan-1"
+        },
+        {
+            "el": "viltan"
+        }
+    ],
+    "mattan": [
+        {
+            "el": "startDoor"
+        },
+        {
+            "el": "aula"
+        },
+        {
+            "el": "aula-geptan-1"
+        },
+        {
+            "el": "geptan"
+        },
+        {
+            "el": "geptan-dekhiv-1"
+        },
+        {
+            "el": "geptan-dekhiv-2"
+        },
+        {
+            "el": "dekhiv"
+        },
+        {
+            "el": "dekhiv-viltan-1"
+        },
+        {
+            "el": "viltan"
+        },
+        {
+            "el": "viltan-mattan-1"
+        },
+        {
+            "el": "viltan-mattan-2"
+        },
+        {
+            "el": "viltan-mattan-3"
+        },
+        {
+            "el": "viltan-mattan-4"
+        },
+        {
+            "el": "mattan"
+        }
+    ]
+}

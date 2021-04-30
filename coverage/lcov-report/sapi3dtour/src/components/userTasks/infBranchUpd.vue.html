@@ -1,0 +1,537 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Code coverage report for sapi3dtour/src/components/userTasks/infBranchUpd.vue</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="..\..\..\..\prettify.css" />
+    <link rel="stylesheet" href="..\..\..\..\base.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style type='text/css'>
+        .coverage-summary .sorter {
+            background-image: url(..\..\..\..\sort-arrow-sprite.png);
+        }
+    </style>
+</head>
+<body>
+<div class='wrapper'>
+  <div class='pad1'>
+    <h1>
+      <a href="..\..\..\..\index.html">All files</a> / <a href="index.html">sapi3dtour/src/components/userTasks</a> infBranchUpd.vue
+    </h1>
+    <div class='clearfix'>
+    </div>
+  </div>
+  <div class='status-line low'></div>
+<pre><table class="coverage">
+<tr><td class="line-count quiet">1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+55
+56
+57
+58
+59
+60
+61
+62
+63
+64
+65
+66
+67
+68
+69
+70
+71
+72
+73
+74
+75
+76
+77
+78
+79
+80
+81
+82
+83
+84
+85
+86
+87
+88
+89
+90
+91
+92
+93
+94
+95
+96
+97
+98
+99
+100
+101
+102
+103
+104
+105
+106
+107
+108
+109
+110
+111
+112
+113
+114
+115
+116
+117
+118
+119
+120
+121
+122
+123
+124
+125
+126
+127
+128
+129
+130
+131
+132
+133
+134
+135
+136
+137
+138
+139
+140
+141
+142
+143
+144
+145
+146
+147
+148
+149
+150
+151
+152
+153
+154
+155
+156
+157
+158
+159
+160
+161
+162
+163
+164
+165</td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-no">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span></td><td class="text"><pre class="prettyprint lang-js">&lt;template&gt;
+    &lt;v-container&gt;
+        &lt;v-form ref="form" class="mx-5 my-3" lazy-validation&gt;
+                &lt;v-combobox v-model="selectedItem" class="ml-5" dense :items="branches" 
+                            label="Válaszd ki a szakot!" hide-selected persistent-hint small-chips&gt;&lt;/v-combobox&gt;
+                &lt;v-card-actions class="justify-center"&gt;
+                    &lt;v-btn color="#2B405D" outlined text class="mr-4" @click="researchBranches"&gt;Szak keresése&lt;/v-btn&gt;
+                &lt;/v-card-actions&gt;
+        &lt;/v-form&gt;
+        &lt;transition v-if="updBran"&gt;
+            &lt;v-form  ref="formUpd" class="mx-5 " lazy-validation&gt;
+                &lt;v-flex&gt;
+                    &lt;v-text-field class="ml-5" type="text" name="nameBranch" v-model="nameBranch" label="Szak neve" dense
+                        :rules="[ value =&gt;!! value || 'A részleg név megadása kötelező!']"/&gt;
+                &lt;/v-flex&gt;
+                &lt;v-flex&gt;
+                    &lt;v-text-field class="ml-5" type="text" name="coordinatorName" v-model="coordinatorName" label="Szakkoordinátor neve" dense
+                        :rules="[ value =&gt;!! value || 'A részleg név megadása kötelező!']"/&gt;
+                &lt;/v-flex&gt;
+                &lt;v-flex&gt;
+                    &lt;v-text-field class="ml-5" type="e-mail" name="coordinatorEmail" v-model="coordinatorEmail" label="Szakkoordinátor e-mail címe" dense
+                        :rules="[ value =&gt;!! value || 'E-mail cím megadása kötelező!', value =&gt; /.+@.+\..+/.test(value) || 'E-mail cím helytelen']"/&gt;
+                &lt;/v-flex&gt;
+                &lt;v-flex&gt;
+                    &lt;v-text-field class="ml-5" type="number" name="roomNumber" v-model="roomNumber" label="Terem szám"
+                        :rules="[ value =&gt;!! value || 'Teremszám megadása kötelező!']"/&gt;
+                &lt;/v-flex&gt;
+                &lt;v-flex&gt;
+                    &lt;v-text-field class="ml-5" type="text" name="link" v-model="link" label="A szak részletes leírásához a link"
+                        :rules="[ value =&gt;!! value || 'A link megadása kötelező!']"/&gt;
+                &lt;/v-flex&gt;
+                &lt;v-card-actions class="justify-center"&gt; 
+                    &lt;v-btn color="#2B405D" outlined text class="mr-4" @click="validateData" &gt;Szerkesztés&lt;/v-btn&gt;
+                &lt;/v-card-actions&gt;
+            &lt;/v-form&gt;
+        &lt;/transition&gt;
+        &lt;transition&gt;
+            &lt;v-list-item v-if="updRespFlase"&gt;
+                &lt;v-list-item-icon&gt;
+                    &lt;v-icon color="red" class="fas fa-times"&gt;&lt;/v-icon&gt;
+                &lt;/v-list-item-icon&gt;
+                &lt;v-list-item-content &gt;
+                    &lt;v-list-item-title class="red--text" &gt;{{ updMsg }}&lt;/v-list-item-title&gt;
+                &lt;/v-list-item-content&gt;
+            &lt;/v-list-item&gt;
+        &lt;/transition&gt;
+        &lt;transition&gt;
+            &lt;v-list-item v-if="resp" &gt;
+                &lt;v-list-item-icon&gt;
+                    &lt;v-icon color="green" class="fas fa-check"&gt;&lt;/v-icon&gt;
+                &lt;/v-list-item-icon&gt;
+                &lt;v-list-item-content &gt;
+                    &lt;v-list-item-title class="green--text" &gt;{{ updMsg }}&lt;/v-list-item-title&gt;
+                &lt;/v-list-item-content&gt;
+            &lt;/v-list-item&gt;
+        &lt;/transition&gt;
+    &lt;/v-container&gt;
+&lt;/template&gt;
+&nbsp;
+&lt;script&gt;
+&nbsp;
+<span class="cstat-no" title="statement not covered" >import UserTasks from "@/services/userTasks";</span>
+&nbsp;
+export default {
+    name: 'InformationBranchUpdate',
+<span class="fstat-no" title="function not covered" >    data () {</span>
+<span class="cstat-no" title="statement not covered" >        return {</span>
+            branches:[],
+            selectedItem:null,
+            updBran:false,
+            updRespFlase:false,
+            updMsg:"",
+            resp:false,
+            nameBranch: "",
+            coordinatorName: "",
+            coordinatorEmail:"",
+            link: "",
+            id:null,
+            roomNumber:"",
+            loadingButtonX: false,
+            loadingButtonTick:false,
+        };
+    },
+    methods:{
+<span class="fstat-no" title="function not covered" >        getBranches()</span>
+<span class="cstat-no" title="statement not covered" >        {</span>
+<span class="cstat-no" title="statement not covered" >            this.selectedItem = null;</span>
+<span class="cstat-no" title="statement not covered" >            this.nameBranch = "";</span>
+<span class="cstat-no" title="statement not covered" >            this.coordinatorName = "";</span>
+<span class="cstat-no" title="statement not covered" >            this.coordinatorEmail = "";</span>
+<span class="cstat-no" title="statement not covered" >            this.link = "";</span>
+<span class="cstat-no" title="statement not covered" >            this.id = null;</span>
+<span class="cstat-no" title="statement not covered" >            this.roomNumber = "";</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >            UserTasks.getBranchesName().then((res)=&gt;{</span></span>
+<span class="cstat-no" title="statement not covered" >                this.branches = res.data;</span>
+<span class="fstat-no" title="function not covered" >            }).catch((err)=&gt;{</span>
+<span class="cstat-no" title="statement not covered" >                this.branches = [];</span>
+            })
+        },
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >        researchBranches(){</span></span>
+<span class="cstat-no" title="statement not covered" >            if (this.selectedItem != null)</span>
+            {
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >                UserTasks.getBranchByName({</span></span>
+                    branchName : this.selectedItem
+                }).then((res)=&gt;{
+<span class="cstat-no" title="statement not covered" >                    this.nameBranch = res.data.branchName;</span>
+<span class="cstat-no" title="statement not covered" >                    this.coordinatorName = res.data.coordinatorName;</span>
+<span class="cstat-no" title="statement not covered" >                    this.coordinatorEmail = res.data.coordinatorEmail;</span>
+<span class="cstat-no" title="statement not covered" >                    this.link = res.data.link;</span>
+<span class="cstat-no" title="statement not covered" >                    this.roomNumber = res.data.roomNumber;</span>
+<span class="cstat-no" title="statement not covered" >                    this.id = res.data.id;</span>
+<span class="cstat-no" title="statement not covered" >                    this.updBran = true;</span>
+<span class="cstat-no" title="statement not covered" >                    this.updRespFlase = false;</span>
+<span class="fstat-no" title="function not covered" >                }).catch((err)=&gt;{</span>
+<span class="cstat-no" title="statement not covered" >                    this.updMsg = "A kiválasztott elem nem létezik!";</span>
+<span class="cstat-no" title="statement not covered" >                    this.updRespFlase = true;</span>
+<span class="cstat-no" title="statement not covered" >                    this.updBran = false;</span>
+<span class="cstat-no" title="statement not covered" >                    this.resp = false;</span>
+                })
+            }
+        },
+<span class="fstat-no" title="function not covered" >        validateData(){</span>
+<span class="cstat-no" title="statement not covered" >            if (this.$refs.formUpd.validate()) {</span>
+<span class="cstat-no" title="statement not covered" >                this.updateBranch()</span>
+            }
+        },
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >        updateBranch(){</span></span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >            UserTasks.updateBranch({</span></span>
+                id : this.id,
+                branchName : this.nameBranch,
+                coordinatorName : this.coordinatorName,
+                coordinatorEmail : this.coordinatorEmail,
+                roomNumber : this.roomNumber,
+                link : this.link
+            }).then((res)=&gt;{
+<span class="cstat-no" title="statement not covered" >                this.updMsg = "A szerkesztés sikeresen megtörtént!";</span>
+<span class="cstat-no" title="statement not covered" >                this.selectedItem = null;</span>
+<span class="cstat-no" title="statement not covered" >                this.updRespFlase = false;</span>
+<span class="cstat-no" title="statement not covered" >                this.updBran = false;</span>
+<span class="cstat-no" title="statement not covered" >                this.resp = true</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >                setTimeout(() =&gt;(this.resp = false), 3000);</span></span>
+<span class="cstat-no" title="statement not covered" >                this.getBranches();</span>
+<span class="fstat-no" title="function not covered" >            }).catch((err)=&gt;{</span>
+<span class="cstat-no" title="statement not covered" >                this.updMsg = "Nem sikerült a szerkesztés!";</span>
+<span class="cstat-no" title="statement not covered" >                this.updRespFlase = true;</span>
+<span class="cstat-no" title="statement not covered" >                this.updBran = true;</span>
+<span class="cstat-no" title="statement not covered" >                this.resp = false;</span>
+<span class="cstat-no" title="statement not covered" ><span class="fstat-no" title="function not covered" >                setTimeout(() =&gt;(this.updRespFlase = false), 3000);</span></span>
+<span class="cstat-no" title="statement not covered" >                this.getBranches();</span>
+            })
+        }
+        
+    },
+<span class="fstat-no" title="function not covered" >    mounted() {</span>
+<span class="cstat-no" title="statement not covered" >        this.getBranches()</span>
+    }
+}
+&lt;/script&gt;
+&nbsp;
+&lt;style&gt;
+    #card {
+        background-color: #E1E1DE;
+        color: #2B405D;
+    }
+&lt;/style&gt;</pre></td></tr>
+</table></pre>
+<div class='push'></div><!-- for sticky footer -->
+</div><!-- /wrapper -->
+<div class='footer quiet pad2 space-top1 center small'>
+  Code coverage
+  generated by <a href="https://istanbul.js.org/" target="_blank">istanbul</a> at Fri Mar 19 2021 11:16:01 GMT+0200 (GMT+02:00)
+</div>
+</div>
+<script src="..\..\..\..\prettify.js"></script>
+<script>
+window.onload = function () {
+        if (typeof prettyPrint === 'function') {
+            prettyPrint();
+        }
+};
+</script>
+<script src="..\..\..\..\sorter.js"></script>
+</body>
+</html>

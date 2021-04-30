@@ -1,0 +1,22 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Html_MatchesSnapshot_True 1`] = `
+<div>
+    <ul>
+        <li><strong>Iron Man</strong></li>
+        <li><strong>Avengers</strong></li>
+        <li><strong>Infitinity War</strong></li>
+    </ul>
+</div>
+`;
+
+exports[`setData_MatchesSnapshot_True 1`] = `
+<div>
+    <ul>
+        <li><strong>Iron Man</strong></li>
+        <li><strong>Avengers</strong></li>
+        <li><strong>Infitinity War</strong></li>
+        <li><strong>Endgame</strong></li>
+    </ul>
+</div>
+`;
